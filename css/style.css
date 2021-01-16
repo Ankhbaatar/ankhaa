@@ -1,0 +1,197 @@
+:root {
+    --prymary-color: #ff3e30;
+    --secondary-color: #d7d7d7;
+    --dark-color: #333;
+    --max-width: 950px;
+}
+
+.category {
+    --sports-color: #f99500;
+    --art-color: #a66bbe;
+    --tech-color: #009cff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: .55rem;
+    line-height: 1.3;
+}
+
+/* Utility */
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    overflow: hidden;
+}
+
+.red-bg {
+    background: #ff3e30;
+    max-width: 100vw;
+    height: 80px;
+}
+
+.container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: auto;
+    overflow: hidden;
+    height: 80px;
+}
+
+
+/* Navigation */
+#main-nav {
+    background: var(--secondary-color);
+    /* position: sticky; */
+    top: 0;
+    z-index: 2;
+}
+
+#main-nav .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem  0;
+    align-items: center;
+}
+
+
+#main-nav .logo {
+    width: 250px;
+}
+
+#main-nav ul {
+    justify-self: end;
+    display: flex;
+}
+
+#main-nav ul li a {
+    padding: 0.75rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#main-nav ul li a.current {
+    background: var(--prymary-color);
+    color: #fff;
+}
+
+#main-nav ul li a:hover {
+    background: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+#main-nav .social i {
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 3rem 0;
+    grid-gap: 2rem;
+    list-style: none;
+    font-weight: 1000;
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark-color);
+}
+
+.grid li i {
+    float: left;
+    margin-right: 1rem;
+}
+
+/* Footer */
+#main-footer {
+    background: var(--secondary-color);
+    color: black;
+    padding: 2rem;
+    font-size: 0.75rem;
+}
+
+#main-footer img {
+    width: 100%;
+}
+
+#main-footer a {
+    color: black;
+}
+
+#main-footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+}
+
+#main-footer .footer-container > *:last-child {
+    background: var(--dark-color);
+    grid-column: 1 / span 4;
+    text-align: center;
+    color: #d7d7d7;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+}
+
+#main-footer .footer-container input[type='email'] {
+    width: 90%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+
+#main-footer .footer-container input[type='submit'] {
+    width: 90%;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    background: var(--prymary-color);
+    border: none;
+}
+
+#main-footer .footer-container input:hover[type='submit'] {
+    background: var(--secondary-color);
+}
+
+#main-footer .btn-1 {
+    display: flex;
+    width: 90%;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    background: var(--prymary-color);
+    justify-content: center;
+}
+
+#main-footer .btn-1:hover {
+    background: var(--secondary-color);
+}
